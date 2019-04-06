@@ -1,0 +1,7 @@
+com/streamsdemo/entities/DeviceDataEnriched.class
+com/streamsdemo/entities/Config.class
+com/streamsdemo/EnrichmentService.class
+com/streamsdemo/entities/DeviceData.class
+com/streamsdemo/ValueMapperDeviceEnrich.class
+com/streamsdemo/entities/Text.class
+com/streamsdemo/kafkastreamsutils/EnrichmentDeserializationExceptionHandler.class

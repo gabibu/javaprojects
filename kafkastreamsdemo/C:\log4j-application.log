@@ -1,0 +1,52 @@
+2019-04-05 13:49:43 ERROR DeserializationExceptionHandler:18 - error from record {0}
+org.apache.kafka.common.errors.SerializationException: Can't deserialize data [[115, 97, 115]] from topic [AdvertisingEngineConfigurationsAutomation]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'sas': was expecting ('true', 'false' or 'null')
+ at [Source: [B@d9f0785; line: 1, column: 7]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1576)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:533)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._reportInvalidToken(UTF8StreamJsonParser.java:3448)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2607)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:841)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:737)
+	at com.fasterxml.jackson.databind.ObjectReader._initForReading(ObjectReader.java:378)
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1494)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1153)
+	at org.springframework.kafka.support.serializer.JsonDeserializer.deserialize(JsonDeserializer.java:355)
+	at org.apache.kafka.streams.processor.internals.SourceNode.deserializeValue(SourceNode.java:60)
+	at org.apache.kafka.streams.processor.internals.RecordDeserializer.deserialize(RecordDeserializer.java:66)
+	at org.apache.kafka.streams.processor.internals.RecordQueue.maybeUpdateTimestamp(RecordQueue.java:160)
+	at org.apache.kafka.streams.processor.internals.RecordQueue.addRawRecords(RecordQueue.java:101)
+	at org.apache.kafka.streams.processor.internals.PartitionGroup.addRawRecords(PartitionGroup.java:136)
+	at org.apache.kafka.streams.processor.internals.StreamTask.addRecords(StreamTask.java:742)
+	at org.apache.kafka.streams.processor.internals.StreamThread.addRecordsToTasks(StreamThread.java:1023)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnce(StreamThread.java:861)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:805)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:774)
+2019-04-06 16:08:32 INFO  EnrichmentService:26 - loading with config {0}
+2019-04-06 16:08:40 INFO  EnrichmentService:56 - start consumming
+2019-04-06 16:14:21 INFO  EnrichmentService:26 - loading with config {0}
+2019-04-06 16:14:24 INFO  EnrichmentService:26 - loading with config {0}
+2019-04-06 16:14:27 INFO  EnrichmentService:56 - start consumming
+2019-04-06 16:20:39 INFO  EnrichmentService:26 - loading with config {0}
+2019-04-06 16:20:41 INFO  EnrichmentService:56 - start consumming
+2019-04-06 16:24:48 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:24:50 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:25:23 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:25:25 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:35:06 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:35:08 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:35:46 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:35:48 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:37:05 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:37:07 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:37:40 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:37:42 INFO  EnrichmentService:60 - start consumming
+2019-04-06 16:43:03 INFO  EnrichmentService:30 - loading with config {0}
+2019-04-06 16:43:24 INFO  EnrichmentService:34 - loading with config {0}
+2019-04-06 16:43:26 INFO  EnrichmentService:64 - start consumming
+2019-04-06 16:44:00 INFO  EnrichmentService:34 - loading with config {0}
+2019-04-06 16:44:03 INFO  EnrichmentService:64 - start consumming
+2019-04-06 16:44:46 INFO  EnrichmentService:34 - loading with config {0}
+2019-04-06 16:44:49 INFO  EnrichmentService:64 - start consumming
+2019-04-06 16:46:06 INFO  EnrichmentService:34 - loading with config {0}
+2019-04-06 16:46:09 INFO  EnrichmentService:64 - start consumming
